@@ -1,6 +1,69 @@
 <!DOCTYPE html>
-<html><body style="text-align:center;font-family:Arial;padding-top:50px">
-<h1>AISSASAW RAP</h1>
-<h2>Official Website</h2>
-<p>قريبا الاغاني والكليبات هنا</p>
-</body></html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AISSASAW RAP - Official</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tajawal:wght@400;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050507;color:#fff;font-family:'Tajawal',sans-serif;overflow-x:hidden}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle at center, #1a1a1a 0%, #000 70%);}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);pointer-events:none}
+.hero-content{display:flex;flex-direction:column;align-items:center;z-index:2;text-align:center}
+.hero-img{width:320px;height:320px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 0 60px rgba(255,255,255,0.3), 0 20px 50px #000;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+h1{font-family:'Bebas Neue';font-size:85px;letter-spacing:5px;margin-top:25px;line-height:1}
+h1 span{color:#888}
+.subtitle{font-size:22px;font-weight:800;letter-spacing:8px;color:#aaa;margin-top:5px}
+.bio{max-width:750px;margin:80px auto;padding:40px 20px;text-align:center;border-top:1px solid #222;border-bottom:1px solid #222}
+.bio h2{font-family:'Bebas Neue';font-size:40px;letter-spacing:3px;margin-bottom:15px}
+.bio p{color:#bbb;line-height:1.9;font-size:18px}
+.socials{display:flex;gap:20px;justify-content:center;margin:50px 0;flex-wrap:wrap}
+.socials a{width:65px;height:65px;background:#111;border:1px solid #222;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff;text-decoration:none;transition:0.3s}
+.socials a:hover{transform:translateY(-5px);background:#fff;color:#000;box-shadow:0 10px 30px rgba(255,255,255,0.3)}
+.music{padding:60px 20px;text-align:center;background:#0a0a0a}
+.music h2{font-family:'Bebas Neue';font-size:45px;margin-bottom:30px}
+.btn{padding:16px 40px;background:#fff;color:#000;font-weight:800;text-decoration:none;border-radius:50px;display:inline-block;transition:0.3s;font-size:18px}
+.btn:hover{background:#888;color:#fff;transform:scale(1.05)}
+footer{padding:30px;text-align:center;color:#555;font-size:14px}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="hero-content">
+<img src="https://aissasaw.github.io/Rap/profile.jpg" onerror="this.src='https://i.ibb.co/6yYqXvL/placeholder.jpg'" class="hero-img" alt="AISSASAW">
+<h1>AISSASAW <span>RAP</span></h1>
+<div class="subtitle">AIN ARNAT • SETIF</div>
+<div class="socials">
+<a href="https://www.youtube.com/@aissasaw" target="_blank"><i class="fab fa-youtube"></i></a>
+<a href="https://www.instagram.com/aissasaw" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/aissasaw" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.tiktok.com/@aissasaw" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+<a href="#bio" class="btn">استمع الآن <i class="fas fa-play"></i></a>
+</div>
+</div>
+
+<div id="bio" class="bio">
+<h2>السيرة الذاتية</h2>
+<p>
+أنا عيسى، المعروف بـ AISSASAW RAP من عين أرنات - سطيف.<br>
+فنان راب جزائري، نكتب كلمات من الواقع، نحكي على الحومة، الطموح، والمعاناة.<br>
+الهدف تاعي نوصل صوت الشباب الجزائري للعالمية.<br><br>
+<strong>هنا تلقى جديـد الأغاني والكليبات الحصرية.</strong>
+<br><br>
+<i>ابعثلي السيرة الحقيقية من فيسبوك باش نبدلها فورا.</i>
+</p>
+</div>
+
+<div class="music">
+<h2>LATEST TRACKS</h2>
+<p style="color:#777;margin-bottom:25px">قريبا على يوتيوب و سبوتيفاي</p>
+<a class="btn" href="https://www.youtube.com/@aissasaw" target="_blank">شاهد على اليوتيوب <i class="fab fa-youtube"></i></a>
+</div>
+
+<footer>© 2026 AISSASAW RAP - All Rights Reserved - Designed for Real Rap Fans</footer>
+</body>
+</html>
