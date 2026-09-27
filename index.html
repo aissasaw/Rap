@@ -1,48 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AISSA SAW - RAP</title>
+<title>AISSA SAW FLAMEN - Official</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#000;color:#fff;font-family:Arial}
-.hero{height:95vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1000&q=80');background-size:cover;background-position:center top}
-.hero h1{font-family:'Arial Black';font-size:18vw;line-height:0.8;letter-spacing:5px;text-shadow:0 5px 30px #000}
-.hero h1 b{color:#ff0000;display:block;font-size:24vw}
-.hero p{letter-spacing:7px;margin-top:15px;opacity:.8;font-size:14px}
-section{padding:35px 15px;max-width:900px;margin:auto}
-h2{font-family:'Arial Black';font-size:28px;border-left:5px solid red;padding-left:12px;margin-bottom:18px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.grid iframe{width:100%;height:200px;border-radius:12px;border:0}
-@media(max-width:600px){.grid{grid-template-columns:1fr}.hero h1{font-size:22vw}}
-.box{background:#121212;border:1px solid #222;border-radius:14px;padding:10px;margin-bottom:15px}
-.social{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:25px 0}
-.social a{background:#1a1a1a;padding:12px 20px;border-radius:25px;color:#fff;text-decoration:none;font-weight:bold}
-.social a.red{background:red}
-footer{text-align:center;opacity:.4;padding:25px;font-size:12px}
+body{background:#080808;color:#fff;font-family:'Inter',Arial,sans-serif;overflow-x:hidden}
+header{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:rgba(0,0,0,0.8);backdrop-filter:blur(12px);border-bottom:1px solid #1a1a1a}
+.logo{font-family:'Anton';font-size:22px;letter-spacing:2px} .logo b{color:#ff0000}
+.nav{display:flex;gap:8px}
+.nav a{padding:8px 14px;border-radius:20px;text-decoration:none;color:#fff;font-weight:800;font-size:11px;background:#1a1a1a;transition:0.2s}
+.nav a.yt{background:#ff0000}
+.nav a:hover{transform:scale(1.05)}
+
+.hero{position:relative;min-height:75vh;display:flex;align-items:end;padding:30px 20px;background:url('rap-bg.jpg') center/cover no-repeat}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to top, #080808 10%, rgba(0,0,0,0.3) 70%)}
+.hero-content{position:relative;z-index:2;max-width:1100px;margin:0 auto;width:100%}
+.hero h1{font-family:'Anton';font-size:clamp(60px, 12vw, 140px);line-height:0.85;letter-spacing:2px}
+.hero h1 span{color:#ff0000}
+.hero .sub{color:#ff0000;letter-spacing:6px;font-weight:900;font-size:12px;margin:15px 0}
+.hero .desc{max-width:600px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(10px);padding:14px 18px;border-radius:14px;color:#ccc;font-size:13px;line-height:1.7;border-left:4px solid #ff0000}
+
+section{max-width:1100px;margin:0 auto;padding:35px 20px}
+.sec-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.sec-head h2{font-family:'Anton';font-size:28px;letter-spacing:1px}
+.sec-head h2 b{color:#ff0000}
+.btn{padding:10px 18px;border-radius:25px;background:#ff0000;color:#fff;text-decoration:none;font-weight:900;font-size:12px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{position:relative;background:#121212;border:1px solid #1f1f1f;border-radius:18px;overflow:hidden;transition:0.3s}
+.card:hover{transform:translateY(-4px);border-color:#ff0000}
+.card iframe{width:100%;height:210px;border:0;display:block}
+.card .info{padding:12px 14px}
+.card .info small{color:#ff0000;font-weight:900;letter-spacing:2px;font-size:10px}
+.card .info p{font-weight:700;margin-top:4px;font-size:14px}
+
+.sound{border-radius:18px;overflow:hidden;border:1px solid #1f1f1f;background:#121212}
+.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+@media(max-width:600px){.bio-grid{grid-template-columns:1fr}}
+.bio-item{background:#121212;border:1px solid #1f1f1f;padding:14px;border-radius:14px}
+.bio-item b{color:#ff0000;font-size:11px;letter-spacing:2px;display:block;margin-bottom:5px}
+.bio-item p{font-size:13px;color:#ddd}
+
+footer{text-align:center;padding:30px;color:#444;font-size:11px;letter-spacing:2px;border-top:1px solid #111;margin-top:20px}
 </style>
 </head>
 <body>
 
+<header>
+<div class="logo">AISSA SAW <b>FLAMEN</b></div>
+<div class="nav">
+<a class="yt" href="https://www.youtube.com/@aissasaw" target="_blank">YouTube</a>
+<a href="https://www.tiktok.com/@aissasaw1" target="_blank">TikTok</a>
+<a href="https://www.instagram.com/aissasaw_rap" target="_blank">IG</a>
+</div>
+</header>
+
 <div class="hero">
-<div>
-<h1>AISSA<br>SAW<br><b>RAP</b></h1>
-<p>ALGERIA DZ - M'SILA</p>
+<div class="hero-content">
+<h1>AISSA<br>SAW <span>FLAMEN</span></h1>
+<div class="sub">RAP ALGERIEN • M'SILA • SINCE 2005</div>
+<div class="desc">
+<b style="color:#fff">عيسى صاو</b> - فنان راب جزائري من سيدي عيسى، المسيلة. بدأت 2005، أول تسجيل 2010 DENYA، مساعد هندسة صوتية Son Star 2016-2018. أغاني جديدة قريبا.
+</div>
 </div>
 </div>
 
 <section>
-<h2>🎬 CLIPS VIDEO - YOUTUBE</h2>
-<div class="grid">
-<iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" allowfullscreen></iframe>
-<iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" allowfullscreen></iframe>
+<div class="sec-head">
+<h2>VIDEOS <b>YOUTUBE</b></h2>
+<a class="btn" href="https://www.youtube.com/@aissasaw" target="_blank">شوف القناة</a>
 </div>
-<p style="text-align:center;margin-top:12px;opacity:.6">حط رابط فيديوك هنا - الفيديو يخدم مباشرة في الموقع</p>
+<div class="grid">
+<div class="card"><iframe src="https://www.youtube.com/embed?listType=user_uploads&list=aissasaw" allowfullscreen></iframe><div class="info"><small>YOUTUBE • @aissasaw</small><p>آخر الفيديوهات</p></div></div>
+<div class="card"><iframe src="https://www.youtube.com/embed/videoseries?list=PL" allowfullscreen></iframe><div class="info"><small>LIVE • CLIPS</small><p>كليبات و حفلات</p></div></div>
+</div>
 </section>
 
 <section>
-<h2>🎵 MUSIC - SOUNDCLOUD</h2>
-<div class="box">
-<iframe width="100%" height="300" frameborder="no" allow="autoplay"
-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1315883223&color=%23ff0000&auto_play=false&hide_related
+<div class="sec-head">
+<h2>SOUND <b>CLOUD</b></h2>
+</div>
+<div class="sound">
+<iframe width="100%" height="300" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/1323434415&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+</div>
+</section>
+
+<section>
+<div class="sec-head"><h2>PARCOURS <b>RAP</b></h2></div>
+<div class="bio-grid">
+<div class="bio-item"><b>2010 - DENYA</b><p>أول تسجيل رسمي في الأستوديو</p></div>
+<div class="bio-item"><b>2013 - SAW VS RAI</b><p>حوار فني بين الراب والراي</p></div>
+<div class="bio-item"><b>CLIP KARIM SABAH</b><p>مشاركة في كليب الجزائر</p></div>
+<div class="bio-item"><b>2016-2018 SON STAR</b><p>مساعد هندسة صوتية - العاصمة</p></div>
+</div>
+</section>
+
+<footer>© 2026 AISSA SAW FLAMEN - SIDI AISSA M'SILA - ALL RIGHTS RESERVED - RAP DZ</footer>
+
+</body>
+</html>
